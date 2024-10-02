@@ -13,7 +13,7 @@ import { navbarStyles } from "./styles";
 export default function NavBar() {
   const navigate = useNavigate();
 
-  return (s
+  return (
     <>
       <Drawer sx={navbarStyles.drawer} variant="permanent" anchor="left">
         <Toolbar />
