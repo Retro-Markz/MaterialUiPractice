@@ -7,19 +7,19 @@ import ListItem from "@mui/material/ListItem";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import { mainNavbarItems } from "./consts/mainNavbarItems";
-import { useParams, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { navbarStyles } from "./styles";
 
 export default function NavBar() {
   const navigate = useNavigate();
 
-  return (
+  return (s
     <>
       <Drawer sx={navbarStyles.drawer} variant="permanent" anchor="left">
         <Toolbar />
         <Divider />
         <List>
-          {mainNavbarItems.map((item, index) => (
+          {mainNavbarItems.map((item) => (
             <ListItem button key={item.id} onClick={() => navigate(item.route)}>
               <ListItemIcon sx={navbarStyles.icons}>{item.icon}</ListItemIcon>
               <ListItemText sx={navbarStyles.text} primary={item.label} />
